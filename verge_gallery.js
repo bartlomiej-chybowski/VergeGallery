@@ -1,7 +1,7 @@
 (function($) {
     $.fn.VergeGallery = function() {
         var images = $(this).find('img');
-        $('.gallery img').on('click', function() {
+        $(this).find('img').on('click', function() {
             $('html body').append('<style type="text/css"> \
                     #gallery_preview { \
                         align-items:center; \
@@ -76,12 +76,12 @@
                         height:80vh; \
                         width:auto; \
                     } \
-                    #gallery_preview #footer { \
+                    #gallery_preview #verge_footer { \
                         bottom:5px;\
                         position:absolute; \
                         right:20px;\
                     } \
-                    #gallery_preview #footer a{ \
+                    #gallery_preview #verge_footer a{ \
                         color:#777;\
                         font-family:helvetica; \
                         font-size:11px; \
@@ -94,7 +94,7 @@
                         <div id="prev_pic" href="#" role="button"><span>&lt;</span></div> \
                         <img src="' + $(this).attr('src') + '"> \
                         <div id="next_pic" href="#" role="button"><span>&gt;</span></div> \
-                        <span id="footer"><a href="https://github.com/enzo-bc/VergeGallery">VergeGallery</a></span> \
+                        <span id="verge_footer"><a href="https://github.com/enzo-bc/VergeGallery">VergeGallery</a></span> \
                     </div> \
                 </div>');
         });
