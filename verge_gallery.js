@@ -7,7 +7,7 @@
                         align-items:center; \
                         background:rgba(0,0,0,0.5); \
                         display:flex; \
-                        font-family:helvetica; \
+                        font-family:monospace; \
                         font-size:30px; \
                         height:100%; \
                         justify-content:center; \
@@ -18,14 +18,24 @@
                         width:100%; \
                         z-index:1000; \
                     } \
+                    #gallery_preview #picture { \
+                        background:#fff; \
+                        border-radius:15px; \
+                        border:20px solid #fff; \
+                        box-sizing:content-box; \
+                        height:85vh; \
+                        margin:auto; \
+                        padding:0; \
+                        position:relative; \
+                    } \
                     #gallery_preview #prev_pic, \
                     #gallery_preview #next_pic { \
                         color:#777; \
                         cursor:pointer; \
                         display:block; \
-                        height:calc(100% - 50px); \
+                        height:100%; \
                         position:absolute; \
-                        top:20px;\
+                        top:0px;\
                         vertical-align: middle; \
                         width:25px; \
                         z-index:1001; \
@@ -41,10 +51,10 @@
                         background:rgba(0, 0, 0, 0.3); \
                     } \
                     #gallery_preview #prev_pic { \
-                        left:20px; \
+                        left:0px; \
                     } \
                     #gallery_preview #next_pic { \
-                        right:20px;\
+                        right:0px;\
                     } \
                     #gallery_preview #close { \
                         color:#5a5a5a; \
@@ -56,28 +66,19 @@
                         margin:0; \
                         padding:0; \
                         position:absolute; \
-                        right:3px; \
-                        top:8px; \
+                        right:-16px; \
+                        top:-9px; \
                         z-index:1001; \
                     } \
                     #gallery_preview #close:hover { \
                         color:#777; \
                     } \
-                    #gallery_preview #picture { \
-                        background:#fff; \
-                        border-radius:15px; \
-                        border:20px solid #fff; \
-                        display:table; \
-                        margin:auto; \
-                        padding:0; \
-                        position:relative; \
-                    } \
                     #gallery_preview img { \
-                        height:80vh; \
+                        height:85vh; \
                         width:auto; \
                     } \
                     #gallery_preview #verge_footer { \
-                        bottom:5px;\
+                        bottom:-20px;\
                         position:absolute; \
                         right:20px;\
                     } \
